@@ -13,18 +13,21 @@ Configutation:
       name: Console_Appender
       target: SYSTEM_OUT
       PatternLayout:
+        charset: "UTF-8"
         pattern: "%highlight{[%-5level]} %d{yyyy-MM-dd HH:mm:ss.SSS} [%t][%F] %c{1} - %msg%n"
         disableAnsi: false
     File:
       name: File_Appender
       fileName: ${log-path}/logfile.log
       PatternLayout:
+        charset: "UTF-8"
         pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t][%F] %c{1} - %msg%n"
     RollingFile:
       name: RollingFile_Appender
       fileName: ${log-path}/rollingfile.log
       filePattern: "logs/archive/rollingfile.log.%d{yyyy-MM-dd-hh-mm}_%i.gz"
       PatternLayout:
+        charset: "UTF-8"
         pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t][%F] %c{1} - %msg%n"
       Policies:
         SizeBasedTriggeringPolicy:
