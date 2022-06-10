@@ -19,7 +19,8 @@ repositories {
 
 dependencies {
     // Use JUnit Jupiter for testing.
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.7.0'
+
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
     // Logging
@@ -32,9 +33,13 @@ dependencies {
     implementation group: 'org.apache.tika', name: 'tika-core', version: '2.3.0'
     implementation group: 'org.jclarion', name: 'image4j', version: '0.7'
 
-
+    // document
+    implementation group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.25'
     implementation 'org.apache.poi:poi:5.2.0'
     implementation 'org.apache.poi:poi-ooxml:5.2.0'
+
+    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
 }
 
 application {

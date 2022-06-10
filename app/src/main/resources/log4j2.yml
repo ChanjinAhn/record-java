@@ -45,7 +45,7 @@ Configutation:
         - ref: File_Appender
 #        - ref: RollingFile_Appender
     Logger:
-      name: com.example
+      name: io.oikk
       additivity: false
       level: debug
       AppenderRef:
