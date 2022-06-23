@@ -24,15 +24,7 @@ public class Main {
 
     // 두 값을 비교하여 더 큰 숫자를 기호로 반환
     static String comparisonAWithB(int a, int b) {
-        String comparisonResult;
-        if (a > b) {
-            comparisonResult = ">";
-        } else if (a < b) {
-            comparisonResult = "<";
-        } else {
-            comparisonResult = "==";
-        }
-        return comparisonResult;
+        return (a > b ? ">" : a < b ? "<" : "==");
     }
 
     public static void main(String[] args) {
