@@ -3,7 +3,6 @@ package io.oikk.algorithm.sort;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,16 +11,11 @@ public class DigitArraySortTest {
 
     static int[] numbers;
 
-    @BeforeAll
-    static void initNumbers(){
-        numbers = new int[]{5,2,4,1,7};
-    }
-
     @DisplayName("삽입 정렬 시간 테스트")
     @Test
     void insertionSort(){
         // given
-
+        numbers = new int[]{5,2,4,1,7};
         // when
         int[] result = DigitArraySort.insertionSort(numbers);
 
@@ -30,17 +24,17 @@ public class DigitArraySortTest {
         assertThat(thenResult).isEqualTo(result);
     }
 
-    @DisplayName("삽입 정렬 시간 테스트2")
+    @DisplayName("버블 정렬 시간 테스트")
     @Test
-    void insertionSort2(){
+    void bubbleSortTest(){
         // given
-
+        numbers = new int[]{8,3,7,5,4,2};
         // when
-        int[] result = DigitArraySort.insertionSort(numbers);
+        int[] result = DigitArraySort.bubbleSort(numbers);
 
         // then
-        int[] thenResult = {1,2,4,5,6};
-        assertThat(thenResult).isNotEqualTo(result);
+        int[] thenResult = {2,3,4,5,7,8};
+        assertThat(thenResult).isEqualTo(result);
     }
 
 //    @DisplayName("병합 테스트")

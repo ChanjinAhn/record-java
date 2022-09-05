@@ -20,8 +20,25 @@ public class DigitArraySort {
         return numbers;
     }
 
+    static int[] bubbleSort(int[] numbers){
+        for (int i = numbers.length; i > 0; i--) {
+            int j = i;
+            int k = 0;
 
-//    void MergeSort(int[] numbers){
-//
-//    }
+                int z = numbers[k];
+                while (j > 0 && k+1 < i){
+                    if (z < numbers[k+1]){
+                        numbers[k] = z;
+                        z = numbers[k+1];
+                    }else {
+                        numbers[k] = numbers[k+1];
+                    }
+                    k++;
+                    j--;
+                }
+                numbers[k] = z;
+        }
+        return numbers;
+    }
+
 }
