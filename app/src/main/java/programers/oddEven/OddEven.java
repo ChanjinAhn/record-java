@@ -1,4 +1,4 @@
-package programers.OddEven;
+package programers.oddEven;
 
 public class OddEven {
     public String solution(int num) {
