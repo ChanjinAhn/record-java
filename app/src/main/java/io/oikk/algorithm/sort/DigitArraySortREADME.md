@@ -1,4 +1,38 @@
-# 숫자 배열 정렬하기
+# 숫자 배열 정렬 알고리즘
+
+## Insert Sort
+
+---
+
+### Referencing & Citation
+https://st-lab.tistory.com/179?category=892973
+https://bluemoon-1st.tistory.com/13?category=988018
+
+## Shell Sort
+
+---
+
+삽입 정렬을 기반으로 한 정렬 방식
+
+### Referencing & Citation
+https://st-lab.tistory.com/209?category=892973
+
+## Bubble Sort
+
+
+---
+
+### Referencing & Citation
+https://bluemoon-1st.tistory.com/13?category=988018
+https://st-lab.tistory.com/195?category=892973
+
+## Selection Sort
+
+---
+
+### Referencing & Citation
+https://st-lab.tistory.com/168?category=892973
+https://bluemoon-1st.tistory.com/13?category=988018
 
 ## Counting Sort
 
@@ -14,3 +48,25 @@
 
 ### Referencing & Citation
 https://st-lab.tistory.com/104?category=892973
+
+## Quick Sort
+
+---
+
+### Referencing & Citation
+https://bluemoon-1st.tistory.com/15?category=988018
+
+## Merge Sort
+
+---
+
+### Referencing & Citation
+https://bluemoon-1st.tistory.com/14?category=988018
+https://st-lab.tistory.com/233?category=892973
+
+## Heap Sort
+
+---
+
+### Referencing & Citation
+https://st-lab.tistory.com/225?category=892973
