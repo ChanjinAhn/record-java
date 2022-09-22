@@ -3,30 +3,30 @@ package io.oikk.algorithm.sort;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class DigitArraySortTest {
 
     int[] numbers;
+    int[] thenResult;
     long beforeTime;
     long afterTime;
     long secDiffTime;
 
     private final DigitArraySort sort = new DigitArraySort();
 
+    @BeforeAll
+    void numbersInit () {
+        numbers = new int[]{8,3,7,5,4,2};
+        thenResult = new int[]{2, 3, 4, 5, 7, 8};
+    }
 
-    @Disabled
-    @BeforeEach
     void beforeRunTimeCheck () {
         beforeTime = System.currentTimeMillis();
     }
 
-    @Disabled
-    @AfterEach
     void afterRunTimeCheck() {
         afterTime = System.currentTimeMillis();
         secDiffTime = (afterTime - beforeTime);
@@ -37,12 +37,11 @@ public class DigitArraySortTest {
     @Test
     void insertionSort(){
         // given
-        numbers = new int[]{5,2,4,1,7};
+
         // when
         int[] result = sort.insertionSort(numbers);
 
         // then
-        int[] thenResult = {1,2,4,5,7};
         assertThat(thenResult).isEqualTo(result);
 
     }
@@ -51,13 +50,11 @@ public class DigitArraySortTest {
     @Test
     void bubbleSortTest(){
         // given
-        numbers = new int[]{8,3,7,5,4,2};
 
         // when
         int[] result = sort.bubbleSort(numbers);
 
         // then
-        int[] thenResult = {2,3,4,5,7,8};
         assertThat(thenResult).isEqualTo(result);
     }
 
@@ -65,13 +62,22 @@ public class DigitArraySortTest {
     @Test
     void selectionSort () {
         // given
-        numbers = new int[]{8,3,7,5,4,2};
 
         // when
         int[] result = sort.selectionSort(numbers);
 
         // then
-        int[] thenResult = {2,3,4,5,7,8};
+        assertThat(thenResult).isEqualTo(result);
+    }
+    @DisplayName("카운팅 정렬 테스트")
+    @Test
+    void countingSort () {
+        // given
+
+        // when
+        int[] result = sort.countingSort(numbers, 11);
+
+        // then
         assertThat(thenResult).isEqualTo(result);
     }
 //    @DisplayName("병합 테스트")2

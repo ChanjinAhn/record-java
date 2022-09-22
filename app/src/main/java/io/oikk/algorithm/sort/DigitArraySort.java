@@ -51,4 +51,23 @@ public class DigitArraySort {
         }
         return numbers;
     }
+
+    int[] countingSort(int[] numbers , int numbersRange){
+        int[] counting = new int[numbersRange];
+        for (int number : numbers) {
+            counting[number]++;
+        }
+        for (int i = 1; i < counting.length; i++) {
+            counting[i] += counting[i-1];
+        }
+        int[] sortedNumbers = new int[numbers.length];
+        for (int i = numbers.length - 1; i >= 0 ; i--) {
+            counting[numbers[i]]--;
+            sortedNumbers[counting[numbers[i]]] = numbers[i];
+        }
+
+        return sortedNumbers;
+    }
+
+
 }
