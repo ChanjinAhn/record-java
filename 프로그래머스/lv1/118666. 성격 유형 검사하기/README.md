@@ -1,10 +1,10 @@
 # [level 1] 성격 유형 검사하기 - 118666 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/118666#) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/118666?language=java) 
 
 ### 성능 요약
 
-메모리: 86.4 MB, 시간: 11.67 ms
+메모리: 79.8 MB, 시간: 9.77 ms
 
 ### 구분
 
