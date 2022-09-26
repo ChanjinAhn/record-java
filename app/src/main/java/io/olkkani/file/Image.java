@@ -1,4 +1,4 @@
-package io.oikk.file;
+package io.olkkani.file;
 
 import java.util.Map;
 import org.apache.commons.io.FilenameUtils;

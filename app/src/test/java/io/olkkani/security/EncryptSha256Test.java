@@ -1,23 +1,22 @@
-package io.oikk.file;
+package io.olkkani.security;
 
 import java.security.NoSuchAlgorithmException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class Sha256Test {
+public class EncryptSha256Test {
 
 
     @DisplayName("SHA256 암호화 테스트")
     @Test
-    void sha256EncryptTest () throws NoSuchAlgorithmException {
+    void encryptTest () throws NoSuchAlgorithmException {
         // given
         String text = "sha256testtext";
-        Sha256 sha256 = new Sha256();
-
+        Encrypt sha256 = new Encrypt();
 
         // when
-//        String encrypt2 = sha256.sha256Encrypt2(text);
-
+        String encrypt = sha256.sha256Encrypt(text);
+        System.out.println(encrypt);
         // then
 
     }

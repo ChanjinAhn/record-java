@@ -1,4 +1,4 @@
-package io.oikk.algorithm.sort;
+package io.olkkani.algorithm.sort;
 
 
 import static org.assertj.core.api.Assertions.assertThat;

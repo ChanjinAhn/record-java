@@ -1,4 +1,4 @@
-package io.oikk.project.setting;
+package io.olkkani.project.setting;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
